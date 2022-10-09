@@ -40,7 +40,7 @@ h1{
 
 header{
     background: white;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
 }
 
 .header{
@@ -217,26 +217,82 @@ a:link, a:visited{
     }
   } 
 
-.main_about_me{
+.block{
     height: auto;
-    background: white   ;
+    background: white;
     width: 75%;
     font-display: block;
     margin: 0 auto;
     font-size: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     text-align: center;
     border: 10px solid white;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 12px 12px 10px black;
 }
 
+.block1{
+    height: auto;
+    background: white;
+    width: 75%;
+    font-display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    border: 10px solid white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 12px 12px 10px black;
+}
+
+.project_main{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    margin: 0 auto ;
+}
+
+.block_main{
+    height: auto;
+    background: white;
+    width: 100%;
+    font-display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 10px solid white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 12px 12px 10px black;
+}
+
+.block_main img{
+    width: 80%;
+}
+
+.languages{
+    display: flex;
+    justify-content: space-evenly;
+}
+.languages img{
+    margin-top: 20px;
+    width: 10%;
+}
 .info_title{
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
+.info p{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.info{
+    margin-bottom: 40px;
+}
 .project_img{
     width: 70%;
     margin-top: 10px;
@@ -248,19 +304,117 @@ h2{
     font-size: 2em;
     }
 
-.picture_of_me{
-    margin-top: 20px;
+.inworkimg
+{
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.inwork{
+    display: block;
+    margin: 0 auto;
+    font-size: 1.75em;
+    margin-top: 200px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Medias querry */
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) {
     .main_carousel{
         display: none;
     }
+
     .footer{
         height: 600px;
     }
+
+    .welcome{
+        text-align: center;
+        margin-bottom: 300px;
+    }
+
+    .welcome p{
+        margin-bottom: 25px;
+        color : white;
+        left: 0;
+        transition: left 1s, transform 1s;
+        white-space: nowrap;
+    }
+
+    .phone_main{
+        height: auto;
+        background: white;
+        width: 75%;
+        font-display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        margin-bottom: 300px;
+        text-align: center;
+        border: 10px solid white;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 12px 12px 10px black;
+    }
+
+    h4{
+        width: 100%;
+        height: 20vh;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+      }
+          
+      .continue{
+        color: rgb(0, 0, 0);
+        text-align: center;
+      }
+      
+      .slider h4 {
+        max-width: 100%;
+        display: none;
+      }
+      
+      h4.active {
+        display: block;
+      }
+      
+      p{
+        width: 100%;
+      }
+      
+      .nav_div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        background: white;
+        border: 10px solid white;
+        border-top: 30px solid white;
+      }
+      h4{
+        border-top: 30px solid white;
+      }
+
+      h4 img{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+      }
+      
+      .btn-nav {
+        font-size: 50px;
+        margin: 0 25px;
+        cursor: pointer;
+      }      
 }
 
 
@@ -339,8 +493,20 @@ h2{
     .logo{
         width: 3%;
     }
-    .main_about_me{
+
+    .block{
         width: 40%;
+    }
+
+    .inwork{
+        width: 100%;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .inworkimg{
+        width: 5%;
+        margin-top: 100px;
     }
 }
 
@@ -380,7 +546,43 @@ h2{
     .footer-tab{
         justify-content: center;
     }
-    .main_about_me{
+
+    .block{
         width: 35%;
+    }
+
+    .main_carousel{
+        margin-bottom: 900px;
+    }
+
+    .project_main{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .block{
+        margin-bottom: 400px;
+    }
+
+    .block1{
+        margin-bottom: 100px;
+        width: 20%;
+        height: 75px;
+    }
+
+    .block_main{
+        margin-left: 50px;
+        width: 30%;
+        margin-right: 50px;
+    }
+
+    .welcome{
+        display: none;
+    }
+
+    .phone_main{
+        display: none;
     }
 }

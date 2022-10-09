@@ -9,50 +9,63 @@ include("projects.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../Medias/icon.png" alt="logo">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Medias/icon.png" alt="logo">
     <title>Portfolio</title>
 </head>
 <body>
 
-<video id="video" autoplay muted loop source src="../Medias/bgabout.mp4" type="video/mp4" class="video"></video>
+<video id="video" autoplay muted loop source src="/Medias/bgabout.mp4" type="video/mp4" class="video"></video>
 
 <div class="header">
-  <div class="top"> <img src="../Medias/logo.png" class="logo" alt="logo">
-<h1> <a href="index.html"></a>Raphaël Plassart</a></h1></div> 
+  <div class="top"> <img src="/Medias/logo.png" class="logo" alt="logo">
+<h1> <a href="index.html"></a>Raphaël Web Design</a></h1></div> 
 <button type="button" id="togg1" class="button" onclick="changeStyle()">  <span class="material-symbols-outlined"> 
    menu
    </span>
 </button>
 <nav id="nav"> 
    <ul class="menu">
-       <li class="li_nav"><a href="index.php">Home</a></li>
-       <li class="li_nav"><a href="aboutme.php">About Me</a></li>
-       <li class="li_nav"><a href="myprojects.php">My projects</a></li>
+       <li class="li_nav"><a href="index.html">Home</a></li>
+       <li class="li_nav"><a href="aboutme.html">About Me</a></li>
+       <li class="li_nav"><a href="myprojects.html">My projects</a></li>
        <li class="li_nav"><a href="#footer">Contact</a></li>
 
    </ul>
 </nav>  
 </div>
 
-<div class="main_about_me">
-    <h2>My projects</h2>
-<?php
-      if(is_array($fetchData)){      
-      $sn=1;
-      foreach($fetchData as $data){
-    ?>
-      <div class="info_title"><?php echo $data['Title']??''; ?></div>
-      <div class="info"><?php echo $data['Description']??''; ?></div>
-      <div class="info"> <img src="<?php echo $data['Picture']??''; ?>" class="project_img"> </div> 
-     <?php
-      $sn++;}}else{ ?>
-        <td colspan="8">
-    <?php echo $fetchData; ?>
-  </td>
-    <?php
-    }?>
+<main>
 
-</div>
+  <div class="block1">
+    <h2>My projects</h2>
+  </div>
+
+  <div class="project_main">
+
+    <div class="block_main">
+    <h3>Wordle</h3> <p>Reproduction of the game Wordle (Motus) on the terminal Bash in TypeScript</p>
+      <img src="/Medias/wordle.png">
+  </div>
+  <div class="block_main">
+    <h3>Turle Town</h3> <p>Creating a city using random Python parameters.</p>
+      <img src="/Medias/town1.png">
+  </div>
+  <div class="block_main">
+    <h3>Hanoï</h3> <p>Implementation of a Hanoi tower resolution algorithm with graphical display.</p>
+      <img src="/Medias/hanoi1.png">
+  </div>
+  <div class="block_main">
+    <h3>Zelda RPG</h3> <p>Creating an RPG in the Zelda universe in TypeScript, in groups of two.</p>
+      <img src="/Medias/wordle.png">
+  </div>
+  <div class="block_main">
+    <h3>Website</h3> <p>Design and creation of a website dedicated to one of my passions: photography.</p>
+      <img src="/Medias/wordle.png">
+  </div>
+
+  </div>
+
+</main>
 
 <div class="footer" id="footer">
   <div class="footer-tab">
@@ -66,10 +79,9 @@ include("projects.php");
 
         <ul>
           <p>Information</p>
-          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Sitemap</a></li>
-          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About</a></li>
-          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Legal Notice</a></li>
-          <li><a href="login.php">Login</a></li>
+          <li><a href="in_work.html">Sitemap</a></li>
+          <li><a href="in_work.html">About</a></li>
+          <li><a href="in_work.html">Legal Notice</a></li>
         </ul>
         <ul>
           <p> Useful Links</p>
