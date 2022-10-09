@@ -550,6 +550,10 @@ h2{
     .block{
         width: 35%;
     }
+    
+    .block_main p{
+        margin-bottom: 10px;
+    }
 
     .main_carousel{
         margin-bottom: 900px;
