@@ -590,4 +590,13 @@ h2{
     .phone_main{
         display: none;
     }
+
+    .block{
+        margin-top: 120px;
+    }
+
+    .block#aboutme{
+        margin-top: 150px;
+        margin-bottom: 300px;
+    }
 }
