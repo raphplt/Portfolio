@@ -216,7 +216,7 @@ a:link, a:visited{
     text-align: center;
     border: 10px solid white;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 5px 5px 5px rgb(29, 34, 67);
+    box-shadow: 4px 4px 3px rgb(92, 92, 103);
 }
 
 .block1{
@@ -230,7 +230,7 @@ a:link, a:visited{
     text-align: center;
     border: 10px solid white;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 5px 5px 5px rgb(29, 34, 67);
+    box-shadow: 4px 4px 3px rgb(92, 92, 103);
 }
 
 .project_main{
@@ -251,7 +251,7 @@ a:link, a:visited{
     text-align: center;
     border: 10px solid white;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 5px 5px 5px rgb(29, 34, 67);
+    box-shadow: 4px 4px 3px rgb(92, 92, 103);
 }
 
 .block_main img{
@@ -309,6 +309,30 @@ h2{
     text-align: center;
 }
 
+svg {
+    font-family: 'Russo One', sans-serif;
+  }
+
+svg text {
+animation: stroke 5s infinite alternate;
+stroke-width: 2;
+stroke: #000000;
+font-size: 160px;
+}
+
+@keyframes stroke {
+0%   {
+    fill: rgba(72,138,20,0); stroke: rgb(0, 0, 0);
+    stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+}
+70%  {fill: rgba(72,138,20,0); stroke: rgb(0, 0, 0); }
+80%  {fill: rgba(72,138,20,0); stroke: rgb(0, 0, 0); stroke-width: 3; }
+100% {
+    fill: rgb(0, 0, 0); stroke: rgba(54,95,160,0); 
+    stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+}
+}
+
 /* Medias querry */
 
 @media screen and (max-width:1023px) {
@@ -344,7 +368,7 @@ h2{
         text-align: center;
         border: 10px solid white;
         border-radius: 10px 10px 10px 10px;
-        box-shadow: 5px 5px 5px rgb(29, 34, 67);
+        box-shadow: 4px 4px 3px rgb(92, 92, 103);
     }
 
     .slider{
@@ -408,6 +432,7 @@ h2{
       .block_main#aboutme{
         width: 75%;
       }
+      
 }
 
 
