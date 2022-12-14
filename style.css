@@ -28,7 +28,7 @@ body{
 
 h1{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5em !important;
     border-top: 10px solid transparent;
 }
 
@@ -62,7 +62,8 @@ nav{
     position: relative;
     display: none;
     text-align: center;
-    width: 100%;
+    font-size: 10px !important;
+    height: 50px;
 }
 
 .menu{
